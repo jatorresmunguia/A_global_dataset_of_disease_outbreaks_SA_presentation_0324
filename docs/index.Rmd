@@ -304,9 +304,10 @@ class: top
 class: top
 # Dashboard
 
-.center[<img src="img/qrcode.png" width="40%"/> <br> 
+.center[[<img src="img/qrcode.png" width="40%"/>](https://jatorresmunguia.shinyapps.io/A_global_dataset_of_disease_outbreaks/) <br> 
 **Scan me!** <br> 
-**or go to: https://s.gwdg.de/hqj0NV**]
+**or go to: https://s.gwdg.de/hqj0NV**
+]
 
 ---
 class: goodbye-slide, inverse, middle, left
@@ -317,11 +318,15 @@ class: goodbye-slide, inverse, middle, left
 
 .right[
 ### Contact information
-[`r fontawesome::fa("twitter", a11y = "sem")` @jtorresmunguia ](https://twitter.com/jtorresmunguia)<br/>
-[`r fontawesome::fa("at", a11y = "sem")` jtorres@gwdg.de ](jtorres@gwdg.de)<br/>
-[`r fontawesome::fa("file-contract", a11y = "sem")` Read the paper ](https://www.nature.com/articles/s41597-022-01797-2)<br/>
-[`r fontawesome::fa("cloud-arrow-down", a11y = "sem")` Access to data from Figshare ](https://doi.org/10.6084/m9.figshare.17207183.v2)<br/>
-]]
+[`r fontawesome::fa("twitter", a11y = "sem")` @jtorresmunguia ](https://twitter.com/jtorresmunguia) <br/>
+[`r fontawesome::fa("at", a11y = "sem")` jtorres@gwdg.de ](jtorres@gwdg.de) <br/>
+[`r fontawesome::fa("file-contract", a11y = "sem")` Read the paper ](https://www.nature.com/articles/s41597-022-01797-2) <br/>
+[`r fontawesome::fa("cloud-arrow-down", a11y = "sem")` Access to data from Figshare ](https://doi.org/10.6084/m9.figshare.17207183.v2) <br/>
+[`r fontawesome::fa("chart-line", a11y = "sem")` Link to dashboard ](https://jatorresmunguia.shinyapps.io/A_global_dataset_of_disease_outbreaks/) <br/>
+[`r fontawesome::fa("person-chalkboard", a11y = "sem")` Slides ](https://jatorresmunguia.github.io/A_global_dataset_of_disease_outbreaks_SA_presentation_0324/#30)
+
+]
+]
 
 
 
