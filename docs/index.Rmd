@@ -1,6 +1,6 @@
 ---
 title: "A global dataset of pandemic- and epidemic-prone disease outbreaks"
-subtitle: "Juan Armando Torres Munguía, Ph.D. <br/> Georg-August-Universität Göttingen"
+subtitle: "Juan Armando Torres Munguía, Ph.D."
 author: "EM-DAT International Disaster Database <br/> Scientific & Technical Advisory Group (STAG) Meeting"
 date: "Potchefstroom, South Africa <br/> March 18th, 2024"
 output:
