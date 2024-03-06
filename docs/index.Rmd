@@ -31,6 +31,7 @@ options(htmltools.dir.version = FALSE)
 library(knitr)
 library(tidyverse)
 library(xaringanExtra)
+library(qrcode)
 #library(NHSRtheme)
 #library(NHSRdatasets)
 #library(icons)
@@ -82,32 +83,10 @@ background-size: cover
 class: top
 
 # Acknowledgments
-.pull-left[.center[<img src="img/Uni-Goe-Logo.png" width="100%"/>]]
 
-.pull-right[
-- **Prof. Inmaculada Martínez-Zarzoso, Ph.D**
-- **M.Sc. Luis Díaz Pavez **
-]
+This dataset is the result of collaborative work by a team of researchers from the University of Göttingen (**Prof. Inmaculada Martínez-Zarzoso, Ph.D** and **M.Sc. Luis Díaz Pavez **), the University of Groningen (**Prof. Konstantin Wacker, Ph.D**), and the University of Bordeaux (**Prof. Florina Cristina Badarau, Ph.D **).
 
---
-
-.pull-left[.center[<img src="img/Uni-Gro-Logo.png" width="100%"/>]]
-
-.pull-right[
-- **Prof. Konstantin Wacker, Ph.D **
-]
-
---
-
-.pull-left[.center[<img src="img/Uni-Bor-Logo.png" width="100%"/>]]
-
-.pull-right[
-- **Prof. Florina Cristina Badarau, Ph.D **
-]
-
---
-
-The authors are grateful for the financial support received from the ENLIGHT network, the German Academic Exchange Service (DAAD) and the Federal Ministry of Education and Research (BMBF)
+The project was made possible through financial support from the ENLIGHT network, the German Academic Exchange Service (DAAD), and the Federal Ministry of Education and Research (BMBF) in Germany.
 
 ---
 class: top
@@ -322,8 +301,12 @@ class: top
 ]
 
 ---
+class: top
+# Dashboard
 
-<iframe src="https://jatorresmunguia.shinyapps.io/A_global_dataset_of_disease_outbreaks/" height="100%" width="100%" scrolling="yes" title="dashboard"></iframe>
+.center[<img src="img/qrcode.png" width="40%"/> <br> 
+**Scan me!** <br> 
+**or go to: https://s.gwdg.de/hqj0NV**]
 
 ---
 class: goodbye-slide, inverse, middle, left
