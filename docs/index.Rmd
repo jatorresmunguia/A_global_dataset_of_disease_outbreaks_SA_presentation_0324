@@ -105,6 +105,10 @@ class: top
 - **Prof. Florina Cristina Badarau, Ph.D **
 ]
 
+--
+
+The authors are grateful for the financial support received from the ENLIGHT network, the German Academic Exchange Service (DAAD) and the Federal Ministry of Education and Research (BMBF)
+
 ---
 class: top
 
