@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){gsap.registerPlugin(ScrollTrigger),gsap.utils.toArray(".parallax-pin").forEach(function(panel,i){ScrollTrigger.create({trigger:panel,start:"top top",pin:!0,pinSpacing:!1})})});
