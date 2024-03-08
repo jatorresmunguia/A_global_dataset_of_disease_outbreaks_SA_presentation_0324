@@ -32,10 +32,7 @@ library(knitr)
 library(tidyverse)
 library(xaringanExtra)
 library(qrcode)
-#library(NHSRtheme)
-#library(NHSRdatasets)
-#library(icons)
-# set default options
+
 opts_chunk$set(echo=FALSE,
                collapse = TRUE,
                fig.width = 7.252,
@@ -56,11 +53,6 @@ xaringanExtra::style_share_again(
   share_buttons = c("twitter", "linkedin", "pocket")
 )
 
-# uncomment the following lines if you want to use the NHS-R theme colours by default
-# scale_fill_continuous <- partial(scale_fill_nhs, discrete = FALSE)
-# scale_fill_discrete <- partial(scale_fill_nhs, discrete = TRUE)
-# scale_colour_continuous <- partial(scale_colour_nhs, discrete = FALSE)
-# scale_colour_discrete <- partial(scale_colour_nhs, discrete = TRUE)
 ```
 
 class: title-slide, right, top
@@ -68,13 +60,13 @@ background-image: url(img/aRt_map.png)
 background-position: 90% 90%
 background-size: cover
 
-<!-- Add a footnote to the qrcode_slides -->
-<div style="position: absolute; bottom: 20px; left: 2%; font-size: 16px; width: 300px;"> 
+<div style="position: absolute; bottom: 20px; left: 2%; font-size: 16px; width: 300px; color: red; font-weight: bold;"> 
   .pull-left[
   .center[ 
   Scan here for slides <br>
   <img src="img/qrcode_slides.png" width="100%"/> <br>
-  or go to: <br> [s.gwdg.de/ZWayNH](https://s.gwdg.de/ZWayNH)
+  or go to: <br> 
+  <a href="https://s.gwdg.de/ZWayNH" style="text-decoration: none; color: blue;">s.gwdg.de/ZWayNH</a>
   ]
   ]
 </div>
@@ -99,6 +91,15 @@ This dataset is the result of collaborative work by a team of researchers from t
 
 The project was made possible through financial support from the [ENLIGHT network](https://enlight-eu.org/), the [German Academic Exchange Service (DAAD)](https://www.daad.de/en/), and the [Federal Ministry of Education and Research (BMBF)](https://www.bmbf.de/bmbf/en/home/home_node.html) in Germany.
 
+<div style="position: absolute; top: 20px; right: -10%; font-size: 12px; width: 300px; color: red; font-weight: bold;"> 
+  .pull-left[
+  .center[ 
+  <img src="img/qrcode_slides.png" width="50%"/> 
+  <a href="https://s.gwdg.de/ZWayNH" style="text-decoration: none; color: blue;">s.gwdg.de/ZWayNH</a>
+  ]
+  ]
+</div>
+
 ---
 class: top
 
@@ -108,6 +109,15 @@ class: top
 .pull-right[
 **Torres Munguía, J.A., Badarau, F.C., Díaz Pavez, L.R. et al. A global dataset of pandemic- and epidemic-prone disease outbreaks. Sci Data 9, 683 (2022). https://doi.org/10.1038/s41597-022-01797-2**
 ]
+
+<div style="position: absolute; top: 20px; right: -10%; font-size: 12px; width: 300px; color: red; font-weight: bold;"> 
+  .pull-left[
+  .center[ 
+  <img src="img/qrcode_slides.png" width="50%"/> 
+  <a href="https://s.gwdg.de/ZWayNH" style="text-decoration: none; color: blue;">s.gwdg.de/ZWayNH</a>
+  ]
+  ]
+</div>
 
 ---
 name: question
@@ -123,63 +133,29 @@ template: question
 
 ----
 
-.left-col[.center[
-`r fontawesome::fa("bacteria", fill = "#FFFFFF", height = "2em", width = "2em")`
-### Need for data
-]]
+.left-col[
+.center[
+`r fontawesome::fa("laptop-code", fill = "#FFFFFF", height = "2em", width = "2em")`
+### Process
+]
+]
 
 --
 
 .center-col[
 .center[
-`r fontawesome::fa("laptop-code", fill = "#FFFFFF", height = "2em", width = "2em")`
-### Process
-]]
+`r fontawesome::fa("chart-column", fill = "#FFFFFF", height = "2em", width = "2em")`
+### Output
+]
+]
 
 --
 
 .right-col[.center[
-`r fontawesome::fa("database", fill = "#FFFFFF", height = "2em", width = "2em")`
-### Output
-]]
-
----
-class: top
-
-# Need for data
-The COVID-19 pandemic has widely demonstrated the hazard that infectious diseases can pose to global public health and development. According to the latest available estimates from the World Health Organization (WHO), as of 19 April 2023, it has been confirmed to have  caused more than 6.9 million deaths. 
-
-In 2019, infectious diseases claimed more than 5.1 million lives, accounting for 14% of the 55.4 million deaths worldwide.
-
-In the last two decades leading up to the COVID-19 pandemic, the world has witnessed how disease outbreaks are emerging at unprecedented rates:
-
-- Severe acute respiratory syndrome associated Coronavirus (SARS-CoV) in 2003, 
-- Influenza A(H1N1) pandemic during 2009-2010, 
-- Middle East respiratory syndrome Coronavirus (MERS-CoV) outbreak in 2012, 
-- Ebola virus disease epidemic during 2013-2016, 
-- zika virus epidemic during 2015-2016.
-
-???
-However, COVID-19 is not the only infectious disease threatening the world.  
-
-According to the latest available estimates from the World Health Organization (WHO), as of 19 April 2023 it has been confirmed to have affected over 763.7 million people worldwide, having caused more than 6.9 million deaths. 
-
----
-class: top
-
-# Need for data
-Unfortunately, existing data on the matter:
-
-- Exclusively cover a limited number of infectious diseases, 
-- are specific to a population, country, or region, or 
-- are based on unofficial information, which may contain incorrect information or disinformation from false reports, 
-- or are not publicly available, hampering their reuse and utilization.
-
----
-template: question
-
-# `r fontawesome::fa("arrow-up-right-dots", fill = "#FFFFFF", height = "2.05em", width = "2.05em")`
-## *"If you can't measure it, you can't manage it."*
+`r fontawesome::fa("chalkboard-user", fill = "#FFFFFF", height = "2em", width = "2em")`
+### Dashboard
+]
+]
 
 ---
 class: top
@@ -215,7 +191,7 @@ The information of the DONs is obtained from an integrated global system coordin
 ---
 class: top
 
-# Process
+# Transforming DONs into statistical data
 #### Code 
 
 --
@@ -257,7 +233,7 @@ class: top
 --
 
 .pull-left-narrow[
-.center[`r fontawesome::fa("chart-line", fill = "#153268", height = "2em", width = "2.25em")`]]
+.center[`r fontawesome::fa("timeline", fill = "#153268", height = "2em", width = "2.25em")`]]
 .pull-right-wide[
 ** a) Information from January 1996.**
 ]
@@ -265,7 +241,7 @@ class: top
 --
 
 .pull-left-narrow[
-.center[`r fontawesome::fa("globe", fill = "#153268", height = "2em", width = "2.25em")`]]
+.center[`r fontawesome::fa("earth-africa", fill = "#153268", height = "2em", width = "2.25em")`]]
 .pull-right-wide[
 ** b) A wide geographic coverage of 233 countries and territories around the world.**
 ]
@@ -273,7 +249,7 @@ class: top
 --
 
 .pull-left-narrow[
-.center[`r fontawesome::fa("disease", fill = "#153268", height = "2em", width = "2.25em")`]]
+.center[`r fontawesome::fa("viruses", fill = "#153268", height = "2em", width = "2.25em")`]]
 .pull-right-wide[
 ** c) An extensive coverage of 70 infection diseases.**
 ]
@@ -281,7 +257,7 @@ class: top
 --
 
 .pull-left-narrow[
-.center[`r fontawesome::fa("code-merge", fill = "#153268", height = "2em", width = "2.25em")`]]
+.center[`r fontawesome::fa("language", fill = "#153268", height = "2em", width = "2.25em")`]]
 .pull-right-wide[
 ** d) Standardized concepts and definitions: official country names according to the ISO-316623 and the ICD-10**
 ]
@@ -303,31 +279,9 @@ class: top
 --
 
 .pull-left-narrow[
-.center[`r fontawesome::fa("cloud-arrow-down", fill = "#153268", height = "2em", width = "2.25em")`]]
+.center[`r fontawesome::fa("download", fill = "#153268", height = "2em", width = "2.25em")`]]
 .pull-right-wide[
 ** f) For transparency, replicability, and reproducibility purposes, we make the data, metadata, and the code to create these data publicly available from Figshare.**
-]
-
----
-template: question
-
-# `r fontawesome::fa("users", fill = "#FFFFFF", height = "2.05em", width = "2.05em")`
-## Uses and applications
-
----
-class: top
-# Uses and applications
-
---
-.pull-left[
-- **To identify countries having significantly higher incidence.**
-
-- **To identify temporal patterns.**
-]
-.pull-right[
-- **Correlates of outbreaks.**
-
-- **Differences among diseases.**
 ]
 
 ---
